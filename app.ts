@@ -14,7 +14,22 @@ function showMenu(): void {
         console.log("Программа успешно завершена.");
         return;
     }
+    if (choice === '1') {
+        inputNumbers();
+        return;
+    }
+
     alert("В текущей ветке Git эта функция еще не реализована!");
     showMenu();
 }
 showMenu();
+function inputNumbers(): void {
+    const val1 = prompt("Введите первое число:");
+    const val2 = prompt("Введите второе число:");
+    if (val1 && val2) {
+        num1 = parseFloat(val1);
+        num2 = parseFloat(val2);
+        alert(`Числа успешно сохранены: первое = ${num1}, второе = ${num2}`);
+    }
+    showMenu();
+}
