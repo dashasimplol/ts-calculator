@@ -1,5 +1,6 @@
 let num1: number = 0;
 let num2: number = 0;
+
 function showMenu(): void {
     console.log("\n--- МЕНЮ ---");
     console.log("1. Ввести два числа");
@@ -8,12 +9,31 @@ function showMenu(): void {
     console.log("4. Выполнить деление");
     console.log("5. Возвести число в степень");
     console.log("0. Выход");
+feat-pow
+
+feat-add
     const choice = prompt("Выберите пункт меню (0-5):");
 
     if (choice === '0') {
         console.log("Программа успешно завершена.");
         return;
     }
+feat-pow
+    if (choice === '5') {
+        powerNumbers();
+        return;
+    }
+
+    alert("В текущей ветке Git эта функция еще не реализована!");
+    showMenu();
+}
+
+showMenu();
+function powerNumbers(): void {
+    alert(`Результат возведения в степень: ${Math.pow(num1, num2)}`);
+    showMenu();
+}
+
 feat-add
     if (choice === '2') {
         addNumbers();
@@ -48,4 +68,4 @@ function addNumbers(): void {
 }
 
 =======
-final
+feat-add
