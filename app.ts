@@ -9,6 +9,8 @@ function showMenu(): void {
     console.log("4. Выполнить деление");
     console.log("5. Возвести число в степень");
     console.log("0. Выход");
+eat-div
+
 feat-sub
 
 
@@ -16,12 +18,32 @@ feat-pow
 
 feat-add
 final
+final
     const choice = prompt("Выберите пункт меню (0-5):");
 
     if (choice === '0') {
         console.log("Программа успешно завершена.");
         return;
     }
+feat-div
+    if (choice === '4') {
+        divideNumbers();
+        return;
+    }
+
+    alert("В текущей ветке Git эта функция еще не реализована!");
+    showMenu();
+}
+
+showMenu();
+function divideNumbers(): void {
+    if (num2 === 0) {
+        alert("Критическая ошибка: на ноль делить нельзя!");
+    } else {
+        alert(`Результат операции деления: ${num1 / num2}`);
+    }
+    showMenu();
+}
 feat-sub
     if (choice === '3') {
         subtractNumbers();
@@ -89,3 +111,4 @@ function addNumbers(): void {
 
 feat-add
  final
+final
