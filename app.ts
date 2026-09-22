@@ -9,15 +9,35 @@ function showMenu(): void {
     console.log("4. Выполнить деление");
     console.log("5. Возвести число в степень");
     console.log("0. Выход");
+feat-sub
+
+
 feat-pow
 
 feat-add
+final
     const choice = prompt("Выберите пункт меню (0-5):");
 
     if (choice === '0') {
         console.log("Программа успешно завершена.");
         return;
     }
+feat-sub
+    if (choice === '3') {
+        subtractNumbers();
+        return;
+    }
+
+    alert("В текущей ветке Git эта функция еще не реализована!");
+    showMenu();
+}
+
+showMenu();
+function subtractNumbers(): void {
+    alert(`Результат операции вычитания: ${num1 - num2}`);
+    showMenu();
+}
+
 feat-pow
     if (choice === '5') {
         powerNumbers();
@@ -67,5 +87,5 @@ function addNumbers(): void {
     showMenu();
 }
 
-=======
 feat-add
+ final
